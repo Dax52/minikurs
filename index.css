@@ -8,8 +8,7 @@
 body {
     width: 1280px;
     height: 905px;
-    /* display: flex; */
-    align-items: center; 
+    background: #E5E5E5;
 }
 .button {
     cursor: pointer;
