@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    font-weight: normal;
+}
+body {
+    width: 1280px;
+    height: 905px;
+    background: #E5E5E5;
+}
+.button {
+    cursor: pointer;
+}
+.header {
+    height: 64px;
+    background: #D7D7D7;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.25);
+}
+.mainfeed {
+    margin-top: 32px;
+    margin-left: 180px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: space-between;
+}
+.left {
+ width: 632px;
+}
+.new_message {
+    height: 172px;
+    background: #FFFFFF;
+    border: 3px solid #0057FF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.new_message_input {
+    margin-left: 16px;
+    margin-top: 24px;
+    margin-right: 16px;
+    border: none;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    color: #1D1E22;
+}
+.new_message_footer {
+    margin-left: 16px;
+    margin-bottom: 16px;
+    width: 600px;
+    height: 52px;
+    display: flex;
+    justify-content: space-between;
+}
+.add_photo {
+    width: 61px;
+    height: 52px;
+    background: #D7D7D7;
+    border: none;
+    border-radius: 10px;
+}
+.send_twit {
+    width: 220px;
+    height: 52px;
+    background: #0057FF;
+    border: 1px solid #0057FF;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.feed {
+    margin-top: 16px;
+    height: 561px;
+    background: #FFFFFF;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.right {
+    width: 312px;
+}
+.profile {
+    height: 150px;
+    background: #D7D7D7;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.profile_circle {
+    position: absolute;
+    margin-top: -16px;
+    margin-left: 16px;
+    width: 84px;
+    height: 84px;
+    background: #D7D7D7;
+    border-radius: 48px;
+}
+.trends {
+    margin-top: 15px;
+    height: 296px;
+    background: #D7D7D7;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
+.who_to_follow{
+    margin-top: 16px;
+    height: 276px;
+    background: #D7D7D7;
+    box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+}
