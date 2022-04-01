@@ -14,10 +14,10 @@
     <main class="mainfeed">
         <section class="left">
             <div class="new_message">
-                <input class="new_message_input" type="text" value="Stop the count!">
+                <input class="new_message_input" type="text" value="Stop the count!" id="NewMessageInput">
                 <div class="new_message_footer">
-                    <button class="button add_photo"></button>
-                    <button class="button send_twit">Отправить</button>
+                    <button class="button add_photo" id="AddPhoto"></button>
+                    <button class="button send_twit" id="SendTwit" onclick="send">Отправить</button>
                 </div>
             </div>
             <div class="feed"></div>
@@ -30,5 +30,7 @@
             <div class="who_to_follow"></div>
         </section>
     </main>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="/javascripts/page.js"></script>
 </body>
 </html>
