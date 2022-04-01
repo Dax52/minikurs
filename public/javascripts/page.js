@@ -7,6 +7,7 @@ async function sendt (newPost) {
         // console.log (res);
         // console.log (res.status);
         if (res.status == 200) {
+            NewMessage.value = '';
             alert ('Пост успешно добавлен');
         }
         
