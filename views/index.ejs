@@ -14,10 +14,15 @@
     <main class="mainfeed">
         <section class="left">
             <div class="new_message">
-                <input class="new_message_input" type="text" value="Stop the count!" id="NewMessageInput">
+                <input class="new_message_input" type="text" maxlength="140" placeholder="Stop the count!" id="NewMessageInput">
                 <div class="new_message_footer">
                     <button class="button add_photo" id="AddPhoto"></button>
-                    <button class="button send_twit" id="SendTwit" onclick="send">Отправить</button>
+                    <div class="new_message_footer_right">
+                        <div class="countdown"> <p class="counttext" id="Count">0</p></div>
+                        <button class="button send_twit" id="SendTwit" onclick="send">Отправить</button>
+                    </div>
+                    <!-- <div class="countdown"> <p class="counttext" id="Count">0</p></div>
+                    <button class="button send_twit" id="SendTwit" onclick="send">Отправить</button> -->
                 </div>
             </div>
             <div class="feed"></div>

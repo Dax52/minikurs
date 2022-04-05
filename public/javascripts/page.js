@@ -24,6 +24,8 @@ async function sendt (newPost) {
 
 let NewMessage = document.getElementById("NewMessageInput");
 let SendTwit = document.getElementById("SendTwit");
+let Countdown = document.getElementById("Count");
+let MessageLen = NewMessage.value.length;
 
 
 SendTwit.onclick = function() {
@@ -39,3 +41,16 @@ SendTwit.onclick = function() {
     }
 
 }
+NewMessage.addEventListener('keyup', function(){
+    MessageLen = NewMessage.value.length;
+    Countdown.textContent = MessageLen;
+
+    // console.log (Countdown);
+    console.log (MessageLen);
+    console.log (Countdown.value)
+})
+// NewMessage.keyup = function() {
+//     Countdown.value = MessageLen;
+//     console.log (Countdown);
+//     console.log (Countdown.value);
+// }
