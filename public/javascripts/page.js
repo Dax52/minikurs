@@ -47,7 +47,7 @@ NewMessage.addEventListener('keyup', function(){
     if (MessageLen === 0) {
         CountVisual.style.borderColor = '#DFDFDF';
     }
-    if (MessageLen < 36) {
+    if (MessageLen > 0 &&MessageLen < 36) {
         CountVisual.style.borderColor = '#DFDFDF';
         CountVisual.style.borderTopColor = '#0057FF';
         CountVisual.style.transform = 'rotate(45deg)';
