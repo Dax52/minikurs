@@ -24,7 +24,9 @@ async function sendt (newPost) {
 
 let NewMessage = document.getElementById("NewMessageInput");
 let SendTwit = document.getElementById("SendTwit");
+
 let Countdown = document.getElementById("Count");
+let CountVisual = document.getElementById("CountVisual");
 let MessageLen = NewMessage.value.length;
 
 
@@ -32,11 +34,9 @@ SendTwit.onclick = function() {
     if (!NewMessage.value) 
         alert ('Введите текст');
     else {
-        // console.log (NewMessage.value);
         let post = {
             'message':NewMessage.value
         };
-        // console.log (post);
         sendt(post);   
     }
 
@@ -44,13 +44,32 @@ SendTwit.onclick = function() {
 NewMessage.addEventListener('keyup', function(){
     MessageLen = NewMessage.value.length;
     Countdown.textContent = MessageLen;
-
-    // console.log (Countdown);
-    console.log (MessageLen);
-    console.log (Countdown.value)
+    if (MessageLen === 0) {
+        CountVisual.style.borderColor = '#DFDFDF';
+    }
+    if (MessageLen < 36) {
+        CountVisual.style.borderColor = '#DFDFDF';
+        CountVisual.style.borderTopColor = '#0057FF';
+        CountVisual.style.transform = 'rotate(45deg)';
+        Countdown.style.transform = 'rotate(-45deg)';
+    }
+    if (MessageLen >= 36 && MessageLen < 106) {
+        CountVisual.style.borderColor = '#DFDFDF';
+        CountVisual.style.borderTopColor = '#0057FF';
+        CountVisual.style.borderRightColor = '#0057FF';
+        CountVisual.style.transform = 'rotate(45deg)';
+        Countdown.style.transform = 'rotate(-45deg)';
+    }
+    if (MessageLen >= 106 && MessageLen < 140) {
+        CountVisual.style.borderColor = '#DFDFDF';
+        CountVisual.style.borderTopColor = '#0057FF';
+        CountVisual.style.borderRightColor = '#0057FF';
+        CountVisual.style.borderBottomColor = '#0057FF';
+        CountVisual.style.transform = 'rotate(45deg)';
+        Countdown.style.transform = 'rotate(-45deg)';
+    }
+    if (MessageLen === 140) {
+        CountVisual.style.borderColor = '#0057FF';
+    }
 })
-// NewMessage.keyup = function() {
-//     Countdown.value = MessageLen;
-//     console.log (Countdown);
-//     console.log (Countdown.value);
-// }
+
