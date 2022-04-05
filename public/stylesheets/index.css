@@ -39,15 +39,26 @@ body {
     justify-content: space-between;
 }
 .new_message_input {
+    height: 102px;
     margin-left: 16px;
     margin-top: 16px;
     margin-right: 16px;
+    outline: none;
     border: none;
     font-weight: 500;
     font-size: 24px;
     line-height: 24px;
     color: #1D1E22;
 }
+.new_message_input:active {
+    outline: none;
+}
+.new_message_input:focus {
+    outline: none;
+}
+/* .new_message_input:focus-visible {
+    outline: none;
+} */
 .new_message_footer {
     margin-left: 16px;
     margin-bottom: 16px;
