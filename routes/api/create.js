@@ -10,8 +10,8 @@ async function insertMessage(data) {
     VALUES (NEXTVAL('messageid'),$1) RETURNING *`,
     [data.message]);
   }
-  catch(e) {
-    throw e;
+  catch (err) {
+    console.log (err);
   }
 }
 
