@@ -1,4 +1,10 @@
 // const res = require("express/lib/response");
+let NewMessage = document.getElementById("NewMessageInput");
+let SendTwit = document.getElementById("SendTwit");
+
+let Countdown = document.getElementById("Count");
+let CountVisual = document.getElementById("CountVisual");
+let MessageLen = NewMessage.value.length;
 
 async function sendt (newPost) {
     try {
@@ -9,6 +15,10 @@ async function sendt (newPost) {
         if (res.status == 200) {
             NewMessage.value = '';
             alert ('Пост успешно добавлен');
+            MessageLen = NewMessage.value.length;
+            Countdown.textContent = MessageLen;
+            CountVisual.style.borderColor = '#DFDFDF';
+
         }
         
     }
@@ -21,14 +31,6 @@ async function sendt (newPost) {
 
     }
 }
-
-let NewMessage = document.getElementById("NewMessageInput");
-let SendTwit = document.getElementById("SendTwit");
-
-let Countdown = document.getElementById("Count");
-let CountVisual = document.getElementById("CountVisual");
-let MessageLen = NewMessage.value.length;
-
 
 SendTwit.onclick = function() {
     if (!NewMessage.value) 
