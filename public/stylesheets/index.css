@@ -146,3 +146,77 @@ body {
     line-height: 24px;
     color: #0057FF;
 }
+
+.post {
+    width: 632px;
+    display: flex;
+    align-items: center;
+}
+.post_avatar {
+    width: 64px;
+    height: 64px;
+    margin: 16px;
+    border-radius: 50%;
+    background-image: url('../images/Feed/image\ 5.png');
+}
+
+.post_main {
+    margin-top: 16px;
+    width: 520px;
+    height: 98px;
+    display: flex;
+    flex-direction: column;
+}
+
+.post_main_header {
+    height: 24px;
+    display: flex;
+}
+
+.post_main_header_name {
+    width: 77px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 24px;
+    color: #1D1E22;
+}
+
+.post_main_header_nickname {
+    margin-left: 16px;
+    width: 152.67px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ABACB1;
+}
+
+.post_main_header_time {
+    margin-left: 148.33px;
+    width: 126px;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+    color: #ABACB1;
+}
+
+.post_main_message{
+    margin-top: 4px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #1D1E22;
+}
+
+.post_main_buttons{
+    margin-top: 8px;
+    width: 269px;
+    height: 24px;
+    display: flex;
+   justify-content: space-between;
+}
+.button_reactions {
+    width: 47px;
+}
